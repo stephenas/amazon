@@ -1,0 +1,25 @@
+.homeBanner {
+  width: 100%;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  /* z-index: -1px; */
+  margin-bottom: -230px;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.backArrow {
+  margin-left: 10px;
+  margin-right: -35px;
+  height: 50px;
+  font-stretch: 50px;
+}
+
+.rightArrow {
+  margin-right: 10px;
+  margin-left: -40px;
+  height: 50px;
+}

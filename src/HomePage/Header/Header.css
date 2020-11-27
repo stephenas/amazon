@@ -13,7 +13,7 @@
   margin-top: 15px;
   margin-left: 20px;
   margin-right: 20px;
-} 
+}
 
 .search {
   display: flex;
@@ -25,7 +25,6 @@
   padding: 10px;
   border: none;
   width: 100%;
-
 }
 
 .searchIcon {

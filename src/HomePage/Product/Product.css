@@ -10,6 +10,11 @@
   width: 100%;
   background-color: white;
   z-index: 1;
+  transition: transform 550ms;
+}
+
+.product:hover {
+  transform: scale(1.05);
 }
 
 .productInfo {
@@ -26,15 +31,15 @@
 }
 
 .product > img {
-  max-height: 200px;
+  max-height: 150px;
   width: 100%;
   object-fit: contain;
   margin-bottom: 15px;
-  
 }
 
 .product > button {
   background-color: #f0c14b;
   border: 1px solid;
   border-color: gray;
+  /* max-width: 200px; */
 }

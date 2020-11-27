@@ -15,6 +15,15 @@ function Header() {
     }
   };
 
+  const truncate = (email, n = 6) => {
+    const index = email?.indexOf("@");
+    return email?.substr(0, index);
+  };
+
+  const windowTop = (event) => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <nav className="header">
       <Link to="/">
@@ -33,12 +42,12 @@ function Header() {
       <div className="headerNav">
         <Link to={!user && "/login"} className="headerLink">
           <div onClick={login} className="option">
-            <span className="optionOne">Hello {user?.email} </span>
+            <span className="optionOne">Hello {truncate(user?.email)} </span>
             <span className="optionTwo">{user ? "Sign Out" : "Sign In"}</span>
           </div>
         </Link>
 
-        <Link to="/" className="headerLink">
+        <Link to="/orders" className="headerLink">
           <div className="option">
             <span className="optionOne">Returns</span>
             <span className="optionTwo">& Orders</span>
@@ -53,7 +62,7 @@ function Header() {
         </Link>
       </div>
 
-      <Link to="/checkout" className="headerLink">
+      <Link to="/checkout" className="headerLink" onClick={windowTop}>
         <div className="basket">
           <ShoppingBasketIcon />
           <span className="optionTwo ordersCount">{basket?.length}</span>

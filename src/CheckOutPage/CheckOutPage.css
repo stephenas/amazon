@@ -14,10 +14,10 @@
 
 .checkOutProduct {
   display: flex;
-  background-color: white; 
-  border-top: 1px solid lightgray;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
 }
-.checkOutTitle{
+.checkOutTitle {
   /* margin-left: 10px; */
   /* margin-right: 10px; */
   padding: 10px;
@@ -29,10 +29,6 @@
   font-size: 28px;
 }
 
-.checkOutTitle > p {
-  
-}
-
 .checkOutProductInfo {
   padding: 15px;
 }
@@ -42,7 +38,6 @@
 }
 .checkOutProductRating {
   display: flex;
-  
 }
 .checkOutProductInfo > button {
   background-color: #f0c14b;

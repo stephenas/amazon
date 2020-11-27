@@ -1,0 +1,27 @@
+.order {
+  padding: 40px;
+  margin: 20px;
+  border: 1px solid lightgray;
+  background-color: white;
+  position: relative;
+}
+
+.order > h4 {
+  margin-bottom: 10px;
+}
+
+.order__date {
+  margin-bottom: 20px;
+}
+
+.order__id {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+
+.order__total {
+  font-weight: 500;
+  text-align: right;
+  margin-top: 15px;
+}

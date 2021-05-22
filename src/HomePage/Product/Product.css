@@ -43,3 +43,7 @@
   border-color: gray;
   /* max-width: 200px; */
 }
+
+.addButton {
+  cursor: pointer;
+}
